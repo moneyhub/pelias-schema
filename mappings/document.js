@@ -24,6 +24,12 @@ var schema = {
       type: 'object',
       dynamic: 'strict',
       properties: {
+        city: {
+          type: 'text',
+          analyzer: 'keyword',
+          search_analyzer: 'keyword',
+          similarity: 'peliasDefaultSimilarity'
+        },
         name: {
           type: 'text',
           analyzer: 'keyword',

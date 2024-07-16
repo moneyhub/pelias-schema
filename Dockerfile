@@ -12,5 +12,7 @@ RUN npm install
 # add code from local checkout to image
 ADD . ${WORKDIR}
 
+RUN rm .npmrc
+
 # run as pelias user
 USER pelias
